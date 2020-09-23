@@ -17,16 +17,15 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".bottombar"></activity>
         <activity android:name=".DetailTeamActivity" />
         <activity android:name=".DeatilQuestionActivity" />
         <activity android:name=".TeamUpActivity" />
         <activity android:name=".TeamActivity" />
         <activity android:name=".QuestionActivity" />
         <activity android:name=".QuestionUpActivity" />
-        <activity android:name=".WebActivity" />
+        <activity android:name=".WebActivity"></activity>
         <activity android:name=".HomeActivity" />
-        <activity android:name=".IntroActivity">
+        <activity android:name=".IntroActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -35,7 +34,10 @@
         </activity>
         <activity android:name=".MainActivity2" />
         <activity android:name=".RegisterActivity" />
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity">
+
+
+        </activity>
     </application>
 
 </manifest>

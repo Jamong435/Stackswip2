@@ -2,7 +2,6 @@ package com.kim9212.stackswip;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -24,7 +23,6 @@ import com.google.android.gms.common.SignInButton;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
-import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.firebase.auth.AuthCredential;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
@@ -51,7 +49,6 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
         et_pass = findViewById(R.id.et_pass);
         btn_login1 = findViewById(R.id.btn_login1);
         btn_register = findViewById(R.id.btn_register);
-
 
 
         GoogleSignInOptions googleSignInOptions = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
@@ -171,10 +168,9 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
     }
 
     public void clickBtn(View view) {
-        Intent intent=new Intent(this,HomeActivity.class);
+        Intent intent=new Intent(this,QuestionActivity.class);
         startActivity(intent);
     }
-
 
 
 }
