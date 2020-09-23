@@ -24,8 +24,8 @@
         android:ems="10"
         android:gravity="left"
         android:hint="아이디"
-        android:textColor="#FFFFFFFF"
-        android:textColorHint="#191511"
+        android:textColor="#191511"
+        android:textColorHint="#59534D"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -41,8 +41,8 @@
 
         android:gravity="center"
         android:hint="비밀번호"
-        android:textColor="#FFFFFFFF"
-        android:textColorHint="#191511"
+        android:textColor="#191511"
+        android:textColorHint="#59534D"
         >
 
         <com.google.android.material.textfield.TextInputEditText
@@ -64,7 +64,8 @@
         android:layout_marginTop="16dp"
         android:ems="10"
         android:gravity="left"
-        android:textColorHint="#191511"
+        android:textColor="#191511"
+        android:textColorHint="#59534D"
         android:hint="이름"
         android:inputType="textPersonName" />
 
@@ -77,8 +78,8 @@
         android:layout_marginTop="16dp"
         android:ems="10"
         android:gravity="left"
-        android:textColor="#FFFFFFFF"
-        android:textColorHint="#191511"
+        android:textColor="#191511"
+        android:textColorHint="#59534D"
         android:hint="나이"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="@+id/et_name"

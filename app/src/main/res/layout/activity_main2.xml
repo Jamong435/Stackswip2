@@ -28,11 +28,5 @@
         app:srcCompat="@mipmap/ic_launcher_round" />
 
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="clickBtn"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"/>
 
 </RelativeLayout>

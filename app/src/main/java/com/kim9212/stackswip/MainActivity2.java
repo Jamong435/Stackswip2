@@ -24,18 +24,14 @@ public class MainActivity2 extends AppCompatActivity {
         Intent intent = getIntent();
         String nickName = intent.getStringExtra("nickName"); // MainActivity로 부터 닉네임 전달받음.
         String photoUrl = intent.getStringExtra("photoUrl"); // MainActivity로 부터 프로필사진 Url 전달받음.
-
         tv_result = findViewById(R.id.tv_result);
         tv_result.setText(nickName); // 닉네임 text를 텍스트 뷰에 세팅.
-
-
         iv_profile = findViewById(R.id.iv_profile);
         Glide.with(this).load(photoUrl).into(iv_profile); // 프로필 url을 이미지 뷰에 세팅.
 
-    }
-    public void clickBtn(View view) {
-        Intent intent=new Intent(this,QuestionActivity.class);
-        startActivity(intent);
+
+
+
     }
 
 }
