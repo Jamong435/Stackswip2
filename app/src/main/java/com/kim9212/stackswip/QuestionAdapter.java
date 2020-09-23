@@ -74,7 +74,7 @@ public class QuestionAdapter extends RecyclerView.Adapter {
                     QuestionItem item=questionItems.get(getLayoutPosition());
                     Intent intent=new Intent(context,DeatilQuestionActivity.class);
                     intent.putExtra("Title", item.title);
-                    intent.putExtra("Question", item.title);
+                    intent.putExtra("Question", item.question);
 
 
                     context.startActivity(intent);
