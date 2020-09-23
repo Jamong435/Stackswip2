@@ -12,6 +12,7 @@
         android:layout_height="wrap_content"
         android:onClick="clickBtn"/>
 
+
     <TextView
         android:id="@+id/title"
         android:layout_width="match_parent"
