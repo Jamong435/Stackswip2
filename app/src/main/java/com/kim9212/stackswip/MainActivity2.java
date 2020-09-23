@@ -2,6 +2,7 @@ package com.kim9212.stackswip;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -31,9 +32,10 @@ public class MainActivity2 extends AppCompatActivity {
         iv_profile = findViewById(R.id.iv_profile);
         Glide.with(this).load(photoUrl).into(iv_profile); // 프로필 url을 이미지 뷰에 세팅.
 
-
-
-
-
     }
+    public void clickBtn(View view) {
+        Intent intent=new Intent(this,QuestionActivity.class);
+        startActivity(intent);
+    }
+
 }
