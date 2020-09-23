@@ -138,6 +138,7 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
             if(result.isSuccess()) { // 인증결과가 성공적이면..
                 GoogleSignInAccount account = result.getSignInAccount(); // account 라는 데이터는 구글로그인 정보를 담고있습니다. (닉네임,프로필사진Url,이메일주소...등)
                 resultLogin(account); // 로그인 결과 값 출력 수행하라는 메소드
+                //
             }
         }
 
