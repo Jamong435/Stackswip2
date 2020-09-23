@@ -11,8 +11,10 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        android:orientation="horizontal"/>
+        android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/que_float"
@@ -24,5 +26,38 @@
         android:src="@drawable/ic_edit_black_24dp"
         android:onClick="AddQuestion"
         android:backgroundTint="#F48024"/>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/up_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#FBAB36"
+        android:layout_weight="1"
+        >
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="질문"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:contentInsetStart="0dp" />
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView_main_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FBAB36"
+        app:itemIconTint="#FFFFFF"
+        app:itemTextColor="#223857"
+        app:menu="@menu/bottombar_menu"
+        android:gravity="bottom"
+        android:layout_centerHorizontal = "true"
+        android:layout_alignParentBottom = "true"
+/>
 
 </RelativeLayout>

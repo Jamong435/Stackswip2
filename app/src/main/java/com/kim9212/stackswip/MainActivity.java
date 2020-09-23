@@ -167,6 +167,10 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
 
     }
 
+    public void clickBtn(View view) {
+        Intent intent=new Intent(this,QuestionActivity.class);
+        startActivity(intent);
+    }
 
 
 }
