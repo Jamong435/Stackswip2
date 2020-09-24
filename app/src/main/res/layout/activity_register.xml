@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".RegisterActivity"
-    android:background="@drawable/back6">
+    android:background="@drawable/back5">
 
     <ImageView
         android:id="@+id/imageview"
@@ -14,7 +14,7 @@
         android:layout_centerHorizontal="true"
         android:onClick="clickiv"
         android:layout_marginTop="150dp"
-        android:background="@drawable/imagebox"/>
+        android:background="@drawable/imagebox2"/>
 
     <EditText
         android:id="@+id/et_id"

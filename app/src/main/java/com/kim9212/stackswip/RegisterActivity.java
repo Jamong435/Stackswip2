@@ -136,12 +136,6 @@ public class RegisterActivity extends AppCompatActivity {
             Uri uri = data.getData();
             if (uri != null) {
                 Glide.with(this).load(uri).into(imageView);
-
-
-                //저장
-                G.imgUrl = imgad;
-                getSharedPreferences("name", MODE_PRIVATE).edit().putString("picture", G.imgUrl).commit();
-
                 imgad = getRealPathFromUri(uri);
             }
         }
