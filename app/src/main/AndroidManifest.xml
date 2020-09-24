@@ -23,11 +23,7 @@
         <activity android:name=".TeamActivity" />
         <activity android:name=".ChatActivity" />
         <activity android:name=".ChattingActivity" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
 
         </activity>.
         <activity android:name=".QuestionActivity"/>
@@ -36,7 +32,11 @@
         <activity android:name=".HomeActivity" />
         <activity android:name=".IntroActivity" />
         <activity android:name=".MainActivity2" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity android:name=".RegisterActivity" />
         <activity android:name=".MainActivity">
