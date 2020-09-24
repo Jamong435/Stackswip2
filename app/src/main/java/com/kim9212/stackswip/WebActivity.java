@@ -22,7 +22,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class WebActivity extends AppCompatActivity {
 
-    private EditText et, et1;
+    private EditText et;
     private WebView wv;
     private Button bt;
     private ProgressDialog progressDialog;
@@ -30,7 +30,7 @@ public class WebActivity extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
-        wv.loadUrl("https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=%EB%8D%B0%EC%9D%B4%ED%8A%B8+%EB%8F%99%EB%84%A4+%EC%B6%94%EC%B2%9C&oquery=%EB%8D%B0%EC%9D%B4%ED%8A%B8+%EB%8F%99%EB%84%A4&tqi=UxEr4lp0J14ssg%2FccbNssssstgR-399963");
+        wv.loadUrl("https://www.jobplanet.co.kr/contents");
         WebSettings webSettings = wv.getSettings();
         webSettings.setJavaScriptEnabled(true); // 웹페이지 자바스클비트 허용 여부
         webSettings.setSupportMultipleWindows(false); // 새창 띄우기 허용 여부
@@ -48,7 +48,7 @@ public class WebActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_web);
-        et1 = findViewById(R.id.et1);
+
         et = findViewById(R.id.et);
         wv = findViewById(R.id.wv);
         bt = findViewById(R.id.bt);
@@ -61,7 +61,7 @@ public class WebActivity extends AppCompatActivity {
             public void onPageStarted(WebView view, String url, Bitmap favicon) {
                 super.onPageStarted(view, url, favicon);
 
-                progressDialog.setMessage("행복해주세요");
+                progressDialog.setMessage("개발자 모두 파이팅");
                 progressDialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
                 progressDialog.show();
 
@@ -112,50 +112,30 @@ public class WebActivity extends AppCompatActivity {
         wv.loadUrl(address);
     }
 
+    @Override
     public void onBackPressed() {
-        if (wv.canGoBack()) {
-            wv.goBack();
-        } else {
-            super.onBackPressed();
-        }
+        super.onBackPressed();
+        Intent intent= new Intent(this,MainActivity2.class);
+        startActivity(intent);
     }
+
         public void clickbtn (View view){
-
-            try {
-                String s = et1.getText().toString();
-
-                Uri uri = Uri.parse("kakaomap://search?q=" + s + "맛집" + "&p=37.537229,127.005515");
-                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-                startActivity(intent);
-            } catch (Exception e) {
-                throw e;
-            }
+            wv.loadUrl("https://www.jobkorea.co.kr/");
+            WebSettings webSettings = wv.getSettings();
         }
-
-
         public void clickbtn2 (View view){
-
-
+            wv.loadUrl("https://www.saramin.co.kr/zf_user/");
+            WebSettings webSettings = wv.getSettings();
         }
-
         public void clickbtn3 (View view){
-            try {
-                String s = et1.getText().toString();
-
-                Uri uri = Uri.parse("kakaomap://search?q=" + s + "영화관" + "&p=37.537229,127.005515");
-                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-                startActivity(intent);
-            } catch (Exception e) {
-                throw e;
-            }
-
+            wv.loadUrl("https://www.wanted.co.kr/");
+            WebSettings webSettings = wv.getSettings();
         }
-
-        public void clickbtn4 (View view){
-
-
-        }
-
-
+    public void clickbtn4(View view) {
+        wv.loadUrl("http://m.albamon.com/");
+        WebSettings webSettings = wv.getSettings();
     }
+
+
+}
 
