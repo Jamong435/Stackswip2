@@ -66,12 +66,15 @@ public class MainActivity2 extends AppCompatActivity {
     }
 
     public void clickBtn(View view) {
-        startActivity(new Intent(this, MainActivity2.class));
+
+        startActivity(new Intent(this, QuestionActivity.class));
     }
 
     public void clickBtn1(View view) {
+        startActivity(new Intent(this, TeamActivity.class));
     }
 
     public void clickBtn2(View view) {
+        startActivity(new Intent(this, WebActivity.class));
     }
 }
