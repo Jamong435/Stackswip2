@@ -1,39 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".QuestionActivity">
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/que_Recycler"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:orientation="horizontal"
-        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
-
-
-
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/que_float"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_margin="16dp"
-        android:src="@drawable/ic_edit_black_24dp"
-        android:onClick="AddQuestion"
-        android:backgroundTint="#F48024"/>
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/up_toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="#FBAB36"
-        android:layout_weight="1"
-        >
+        android:background="#FBAB36">
         <TextView
             android:id="@+id/toolbar_title"
             android:layout_width="wrap_content"
@@ -46,6 +24,36 @@
             app:contentInsetStart="0dp" />
     </androidx.appcompat.widget.Toolbar>
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/que_Recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+        <ImageView
+            android:id="@+id/swipeGesture"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/que_float"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="16dp"
+            android:src="@drawable/ic_edit_black_24dp"
+            android:onClick="AddQuestion"
+            android:backgroundTint="#F48024"/>
+
+    </RelativeLayout>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView_main_menu"
@@ -60,4 +68,4 @@
         android:layout_alignParentBottom = "true"
 />
 
-</RelativeLayout>
+</LinearLayout>
