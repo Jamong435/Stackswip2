@@ -24,7 +24,7 @@
         android:ems="10"
         android:gravity="left"
         android:hint="아이디"
-        android:textColor="#191511"
+        android:textColor="#FFFFFF"
         android:textColorHint="#59534D"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
@@ -41,7 +41,7 @@
 
         android:gravity="center"
         android:hint="비밀번호"
-        android:textColor="#191511"
+        android:textColor="#FFFFFF"
         android:textColorHint="#59534D"
         >
 
@@ -64,7 +64,7 @@
         android:layout_marginTop="16dp"
         android:ems="10"
         android:gravity="left"
-        android:textColor="#191511"
+        android:textColor="#FFFFFF"
         android:textColorHint="#59534D"
         android:hint="이름"
         android:inputType="textPersonName" />
@@ -78,7 +78,7 @@
         android:layout_marginTop="16dp"
         android:ems="10"
         android:gravity="left"
-        android:textColor="#191511"
+        android:textColor="#FFFFFF"
         android:textColorHint="#59534D"
         android:hint="나이"
         android:inputType="textPersonName"
