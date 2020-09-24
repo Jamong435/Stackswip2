@@ -1,6 +1,7 @@
 package com.kim9212.stackswip;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
@@ -21,14 +22,10 @@ import java.util.ArrayList;
 import java.util.Calendar;
 
 public class ChatActivity extends AppCompatActivity {
-
-
     ListView listView;
     ChatAdapter adapter;
     ArrayList<MessageItem> messageItems= new ArrayList<>();
-
     EditText etMsg;
-
     FirebaseDatabase firebaseDatabase;
     DatabaseReference chatRef;
 
@@ -37,12 +34,8 @@ public class ChatActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chat);
 
-
         //제목줄의 글씨는 보통 채팅방이름인데.. 본인 닉네임표시
-
-
         etMsg= findViewById(R.id.et_msg);
-
         listView= findViewById(R.id.listview);
         adapter= new ChatAdapter(this, messageItems);
         listView.setAdapter(adapter);
@@ -66,32 +59,20 @@ public class ChatActivity extends AppCompatActivity {
                 adapter.notifyDataSetChanged();
                 //리스트뷰에 커서 위치를 가장 마지막 아이템 포지션으로
                 listView.setSelection(messageItems.size()-1);
-
             }
-
             @Override
             public void onChildChanged(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
-
             }
-
             @Override
             public void onChildRemoved(@NonNull DataSnapshot dataSnapshot) {
-
             }
-
             @Override
             public void onChildMoved(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
-
             }
-
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
-
             }
         });
-
-
-
     }
 
     public void clickSend(View view) {
@@ -114,5 +95,11 @@ public class ChatActivity extends AppCompatActivity {
         //소프트 키패드를 안보이도록
         InputMethodManager imm= (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
         imm.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), 0);
+    }
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent intent= new Intent(this,MainActivity2.class);
+        startActivity(intent);
     }
 }

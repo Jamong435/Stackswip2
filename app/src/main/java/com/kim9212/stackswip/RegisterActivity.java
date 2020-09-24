@@ -32,6 +32,7 @@ public class RegisterActivity extends AppCompatActivity {
 
     private EditText et_id, et_name, et_age;
     private Button btn_register;
+    ImageView imageView;
     String imgad;
 
     TextInputEditText et_pass;
@@ -53,6 +54,7 @@ public class RegisterActivity extends AppCompatActivity {
         et_pass = findViewById(R.id.et_pass);
         et_name = findViewById(R.id.et_name);
         et_age = findViewById(R.id.et_age);
+        imageView = findViewById(R.id.imageview);
 
 
         et_pass.addTextChangedListener(new TextWatcher() {
@@ -125,19 +127,19 @@ public class RegisterActivity extends AppCompatActivity {
         intent.setType("image/*");
         startActivityForResult(intent, 100);
     }
-//
-//    @Override
-//    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
-//        super.onActivityResult(requestCode, resultCode, data);
-//
-//        if (requestCode == 100 && resultCode == RESULT_OK) {
-//            Uri uri = data.getData();
-//            if (uri != null) {
-//                Glide.with(this).load(uri).into(imageView);
-//                imgad = getRealPathFromUri(uri);
-//            }
-//        }
-//    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        if (requestCode == 100 && resultCode == RESULT_OK) {
+            Uri uri = data.getData();
+            if (uri != null) {
+                Glide.with(this).load(uri).into(imageView);
+                imgad = getRealPathFromUri(uri);
+            }
+        }
+    }
 
     String getRealPathFromUri(Uri uri){
         String[] proj= {MediaStore.Images.Media.DATA};

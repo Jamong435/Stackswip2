@@ -32,9 +32,7 @@ public class ChattingActivity extends AppCompatActivity {
 
     //프로필 이미지 Uri 참조변수
     Uri imgUri;
-
     boolean isChanged= false; //데이터의 변경이 있었는가?
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -73,14 +71,10 @@ public class ChattingActivity extends AppCompatActivity {
             }
         }
     }
-
     //데이터를 저장하는 메소드
     void saveData(){
         //프로필이미지와 채팅명을 Firebase DB에 저장
-
         G.nickName= etName.getText().toString();
-
-
         //먼저 이미지파일 부터 Firebase Storage에 업로드
         //업로드할 파일명이 같으면 안되므로 날짜를 이용해서 파일명 지정
         SimpleDateFormat sdf= new SimpleDateFormat("yyyyMMddhhmmss");
@@ -147,14 +141,10 @@ public class ChattingActivity extends AppCompatActivity {
             finish();
         }
     }
-
-
     //디바이스에 저장된 정보 읽어오기
     void loadData(){
         SharedPreferences pref= getSharedPreferences("account", MODE_PRIVATE);
         G.nickName= pref.getString("nickName", null);
         G.profileUri= pref.getString("profileUrl", null);
-
     }
-
 }

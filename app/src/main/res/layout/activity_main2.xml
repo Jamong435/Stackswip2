@@ -22,7 +22,7 @@
         android:textColor="@color/colorAccent"
         android:layout_alignParentBottom="true"
         android:layout_centerInParent="true"
-        android:layout_marginBottom="300dp"
+        android:layout_marginBottom="400dp"
         android:visibility="gone"
         android:onClick="clickBtn"/>
     <Button
@@ -35,7 +35,7 @@
         android:textColor="@color/colorAccent"
         android:layout_alignParentBottom="true"
         android:layout_centerInParent="true"
-        android:layout_marginBottom="200dp"
+        android:layout_marginBottom="300dp"
         android:visibility="gone"
         android:onClick="clickBtn1"/>
     <Button
@@ -48,9 +48,22 @@
         android:textColor="@color/colorAccent"
         android:layout_alignParentBottom="true"
         android:layout_centerInParent="true"
-        android:layout_marginBottom="100dp"
+        android:layout_marginBottom="200dp"
         android:visibility="gone"
         android:onClick="clickBtn2"/>
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="단체채팅"
+        android:backgroundTint="#FFFFFF"
+        android:background="@drawable/bg_button_round"
+        android:textColor="@color/colorAccent"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="100dp"
+        android:visibility="gone"
+        android:onClick="clickBtn3"/>
 
 
     <ImageView

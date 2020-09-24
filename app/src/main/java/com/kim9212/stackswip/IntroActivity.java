@@ -14,11 +14,7 @@ public class IntroActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_intro);
-
         handler.sendEmptyMessageDelayed(0,1500);
-
-
-
     }
     Handler handler= new Handler(){
         @Override

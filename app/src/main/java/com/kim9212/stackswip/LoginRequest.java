@@ -16,13 +16,10 @@ public class LoginRequest extends StringRequest {
 
     public LoginRequest(String userID, String userPassword, Response.Listener<String> listener) {
         super(Method.POST, URL, listener, null);
-
         map = new HashMap<>();
         map.put("userID",userID);
         map.put("userPassword", userPassword);
-
     }
-
     @Override
     protected Map<String, String> getParams() throws AuthFailureError {
         return map;

@@ -20,7 +20,7 @@ public class MainActivity2 extends AppCompatActivity {
     private ImageView iv_profile; // 이미지 뷰
     TextView tv;
     ImageView iv;
-    Button btn,btn1,btn2;
+    Button btn,btn1,btn2,btn3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +31,7 @@ public class MainActivity2 extends AppCompatActivity {
         btn = findViewById(R.id.btn);
         btn = findViewById(R.id.btn1);
         btn = findViewById(R.id.btn2);
+        btn = findViewById(R.id.btn3);
         Animation ani = AnimationUtils.loadAnimation(this, R.anim.appear_logo);
 
         iv.startAnimation(ani);
@@ -50,6 +51,7 @@ public class MainActivity2 extends AppCompatActivity {
                 findViewById(R.id.btn).setVisibility(View.VISIBLE);
                 findViewById(R.id.btn1).setVisibility(View.VISIBLE);
                 findViewById(R.id.btn2).setVisibility(View.VISIBLE);
+                findViewById(R.id.btn3).setVisibility(View.VISIBLE);
             }
 
             @Override
@@ -66,7 +68,6 @@ public class MainActivity2 extends AppCompatActivity {
     }
 
     public void clickBtn(View view) {
-
         startActivity(new Intent(this, QuestionActivity.class));
     }
 
@@ -76,5 +77,9 @@ public class MainActivity2 extends AppCompatActivity {
 
     public void clickBtn2(View view) {
         startActivity(new Intent(this, WebActivity.class));
+    }
+
+    public void clickBtn3(View view) {
+        startActivity(new Intent(this, ChattingActivity.class));
     }
 }
