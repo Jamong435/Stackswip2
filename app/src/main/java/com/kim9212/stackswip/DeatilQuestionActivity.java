@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class DeatilQuestionActivity extends AppCompatActivity {
 
+//    보여지는 XML 문서
     TextView QDtitle;
     TextView QDquestion;
 
@@ -20,10 +21,12 @@ public class DeatilQuestionActivity extends AppCompatActivity {
         QDtitle=findViewById(R.id.QD_title);
         QDquestion=findViewById(R.id.QD_question);
 
+//        인테트로 가져온 객체들
         Intent intent=getIntent();
         String title=intent.getStringExtra("Title");
         String question=intent.getStringExtra("Question");
 
+//        가져온 객체들 보여주기
         QDtitle.setText(title);
         QDquestion.setText(question);
     }

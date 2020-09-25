@@ -18,7 +18,10 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
         <activity android:name=".DetailTeamActivity" />
-        <activity android:name=".DeatilQuestionActivity" />
+        <activity android:name=".DeatilQuestionActivity" >
+
+        </activity>
+
         <activity android:name=".TeamUpActivity" />
         <activity android:name=".TeamActivity" />
         <activity android:name=".QuestionActivity" />
@@ -31,6 +34,7 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
         <activity android:name=".MainActivity2" />
         <activity android:name=".RegisterActivity" />

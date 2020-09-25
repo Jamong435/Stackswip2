@@ -8,7 +8,10 @@
     tools:context=".MainActivity">
 
 
-
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:onClick="ccc"></Button>
 
     <TextView
         android:id="@+id/title"
@@ -91,6 +94,7 @@
         android:layout_centerInParent="true"
         android:textColor="#F2C94C"
         android:textSize="15dp"/>
+
     <com.google.android.gms.common.SignInButton
         android:id="@+id/btn_google"
         android:layout_centerInParent="true"
