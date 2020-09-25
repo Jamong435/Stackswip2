@@ -18,15 +18,14 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
         <activity android:name=".DetailTeamActivity" />
-        <activity android:name=".DeatilQuestionActivity" >
-
-        </activity>
-
+        <activity android:name=".DeatilQuestionActivity" />
         <activity android:name=".TeamUpActivity" />
         <activity android:name=".TeamActivity" />
-        <activity android:name=".QuestionActivity" />
+        <activity android:name=".ChatActivity" />
+        <activity android:name=".ChattingActivity" />
+        <activity android:name=".QuestionActivity"/>
         <activity android:name=".QuestionUpActivity" />
-        <activity android:name=".WebActivity"></activity>
+        <activity android:name=".WebActivity"/>
         <activity android:name=".HomeActivity" />
         <activity android:name=".IntroActivity" >
             <intent-filter>
@@ -34,9 +33,8 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
-        <activity android:name=".MainActivity2" />
+        <activity android:name=".MainActivity2"/>
         <activity android:name=".RegisterActivity" />
         <activity android:name=".MainActivity">
 

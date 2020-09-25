@@ -2,7 +2,9 @@ package com.kim9212.stackswip;
 
 public class G {
 
-    static String nickName;
-    static String imgUrl;
+
+    public static String nickName; //채팅명
+    public static String profileUri; //프로필이미지의 Uri정보
+
 
 }
