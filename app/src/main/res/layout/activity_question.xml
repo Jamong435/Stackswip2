@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#223857"
     tools:context=".QuestionActivity">
 
     <androidx.appcompat.widget.Toolbar
@@ -51,7 +52,7 @@
             android:layout_margin="16dp"
             android:src="@drawable/ic_edit_black_24dp"
             android:onClick="AddQuestion"
-            android:backgroundTint="#F48024"/>
+            android:backgroundTint="#FBAB36"/>
 
     </RelativeLayout>
 
@@ -65,7 +66,6 @@
         app:menu="@menu/bottombar_menu"
         android:gravity="bottom"
         android:layout_centerHorizontal = "true"
-        android:layout_alignParentBottom = "true"
-/>
+        android:layout_alignParentBottom = "true"/>
 
 </LinearLayout>

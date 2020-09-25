@@ -167,17 +167,6 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
     public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
 
     }
-
-    public void clickBtn(View view) {
-        Intent intent=new Intent(this,QuestionActivity.class);
-        startActivity(intent);
-    }
-
-
-    public void ccc(View view) {
-        Intent intent=new Intent(this, TeamActivity.class);
-        startActivity(intent);
-    }
 }
 
 

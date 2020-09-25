@@ -22,6 +22,7 @@ public class IntroActivity extends AppCompatActivity {
             super.handleMessage(msg);
             Intent intent= new Intent(IntroActivity.this,MainActivity.class);
             startActivity(intent);
+            finish();
         }
     };
 }

@@ -44,7 +44,7 @@ public class QuestionUpActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_question_up);
-        iv=findViewById(R.id.QU_img);
+
         etTitle=findViewById(R.id.QU_title);
         etQuestion=findViewById(R.id.QU_question);
 

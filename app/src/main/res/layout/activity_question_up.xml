@@ -5,12 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#223857"
+    android:padding="16dp"
     tools:context=".QuestionUpActivity">
 
     <TextView
         android:layout_marginTop="50dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#FBAB36"
         android:text="질문"/>
 
     <EditText
@@ -18,12 +22,18 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="text"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/edit_bg"
+        android:padding="8dp"
         android:maxEms="50"
         android:lines="1"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginTop="16dp"
+        android:textColor="#FBAB36"
         android:text="내용"/>
 
     <EditText
@@ -32,26 +42,30 @@
         android:layout_height="wrap_content"
         android:inputType="textMultiLine"
         android:gravity="top"
-        android:lines="5"
+        android:padding="8dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/edit_bg"
+        android:lines="12"
         android:maxLines="5"/>
-    <Button
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="첨부파일"
-        android:layout_gravity="right"
-        android:onClick="loadImg"/>
+        android:layout_marginTop="16dp"
+        android:layout_gravity="right">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="첨부파일"
+            android:onClick="loadImg"/>
 
-    <ImageView
-        android:id="@+id/QU_img"
-        android:layout_width="match_parent"
-        android:layout_height="150dp"/>
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="right"
-        android:onClick="clickComplete"
-        android:text="등록"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginLeft="8dp"
+            android:onClick="clickComplete"
+            android:text="등록"/>
+    </LinearLayout>
 
 
 </LinearLayout>
