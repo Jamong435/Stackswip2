@@ -32,6 +32,8 @@ public class RegisterActivity extends AppCompatActivity {
 
     private EditText et_id, et_name, et_age;
     private Button btn_register;
+    ImageView imageView;
+    String imgad;
 
     TextInputEditText et_pass;
     TextInputLayout inputLayout;

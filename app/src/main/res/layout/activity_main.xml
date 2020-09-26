@@ -9,7 +9,6 @@
 
 
 
-
     <TextView
         android:id="@+id/title"
         android:layout_width="match_parent"
@@ -26,6 +25,10 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:backgroundTint="#F6B900"
+        android:inputType="text"
+        android:maxLength="20"
+        android:textColor="#FFFFFF"
+        android:lines="1"
         android:ems="10"
         android:textSize="20dp"
         android:hint="   ID"
@@ -40,7 +43,7 @@
         android:layout_centerInParent="true"
         android:layout_margin="16dp"
         android:backgroundTint="#ffff"
-        android:hint="password"
+        android:hint="Password"
         android:textColorHint="#F6B900"
         app:boxBackgroundColor="#00000000"
         >
@@ -49,7 +52,9 @@
             android:id="@+id/et_pass"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="16dp"
+            android:textSize="20dp"
+            android:textColor="#FFFFFF"
+            android:paddingLeft="16dp"
             android:inputType="textPassword"
             android:backgroundTint="#F6B900"/>
 
@@ -91,6 +96,7 @@
         android:layout_centerInParent="true"
         android:textColor="#F2C94C"
         android:textSize="15dp"/>
+
     <com.google.android.gms.common.SignInButton
         android:id="@+id/btn_google"
         android:layout_centerInParent="true"

@@ -58,24 +58,28 @@ public class QuestionActivity extends AppCompatActivity {
                         // 어떤 메뉴 아이템이 터치되었는지 확인합니다.
                         switch (item.getItemId()) {
                             case R.id.menuitem_bottombar_up:
-                                Intent intent = new Intent(QuestionActivity.this,HomeActivity.class);
+                                Intent intent = new Intent(QuestionActivity.this,ChattingActivity.class);
                                 startActivity(intent);
-                                return true;
+                                finish();
+                                break;
 
                             case R.id.menuitem_bottombar_down:
                                 Intent intent1 = new Intent(QuestionActivity.this,QuestionActivity.class);
                                 startActivity(intent1);
-                                return true;
+                                finish();
+                                break;
 
                             case R.id.menuitem_bottombar_search:
-                                Intent intent3 = new Intent(QuestionActivity.this,HomeActivity.class);
+                                Intent intent3 = new Intent(QuestionActivity.this,TeamActivity.class);
                                 startActivity(intent3);
-                                return true;
+                                finish();
+                                break;
 
                             case R.id.menuitem_bottombar_ses:
-                                Intent intent4 = new Intent(QuestionActivity.this,HomeActivity.class);
+                                Intent intent4 = new Intent(QuestionActivity.this,WebActivity.class);
                                 startActivity(intent4);
-                                return true;
+                                finish();
+                                break;
                         }
                         return false;
                     }

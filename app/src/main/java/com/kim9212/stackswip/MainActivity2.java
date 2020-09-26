@@ -62,9 +62,8 @@ public class MainActivity2 extends AppCompatActivity {
             public void onAnimationRepeat(Animation animation) {
             }
         });
+
         tv.startAnimation(AnimationUtils.loadAnimation(this, R.anim.appear));
-
-
     }
 
     public void clickBtn(View view) {
@@ -82,4 +81,7 @@ public class MainActivity2 extends AppCompatActivity {
     public void clickBtn3(View view) {
         startActivity(new Intent(this, ChattingActivity.class));
     }
+
+
+
 }
