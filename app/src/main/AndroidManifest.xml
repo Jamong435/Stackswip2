@@ -22,22 +22,19 @@
         <activity android:name=".TeamUpActivity" />
         <activity android:name=".TeamActivity" />
         <activity android:name=".ChatActivity" />
-        <activity android:name=".ChattingActivity" >
+        <activity android:name=".ChattingActivity"/>
+        <activity android:name=".QuestionActivity"/>
+        <activity android:name=".QuestionUpActivity" />
+        <activity android:name=".WebActivity"/>
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".IntroActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
-        </activity>.
-        <activity android:name=".QuestionActivity"/>
-        <activity android:name=".QuestionUpActivity" />
-        <activity android:name=".WebActivity"></activity>
-        <activity android:name=".HomeActivity" />
-        <activity android:name=".IntroActivity" />
-        <activity android:name=".MainActivity2" >
-
         </activity>
+        <activity android:name=".MainActivity2"/>
         <activity android:name=".RegisterActivity" />
         <activity android:name=".MainActivity">
 
