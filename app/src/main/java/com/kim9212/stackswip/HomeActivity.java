@@ -36,12 +36,12 @@ public class HomeActivity extends AppCompatActivity {
                                 return true;
 
                             case R.id.menuitem_bottombar_search:
-                                Intent intent3 = new Intent(HomeActivity.this,HomeActivity.class);
+                                Intent intent3 = new Intent(HomeActivity.this,WebActivity.class);
                                 startActivity(intent3);
                                 return true;
 
                             case R.id.menuitem_bottombar_ses:
-                                Intent intent4 = new Intent(HomeActivity.this,QuestionActivity.class);
+                                Intent intent4 = new Intent(HomeActivity.this,TeamActivity.class);
                                 startActivity(intent4);
                                 return true;
                         }

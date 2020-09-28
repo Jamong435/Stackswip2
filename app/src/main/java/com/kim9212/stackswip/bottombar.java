@@ -36,7 +36,7 @@ public class bottombar extends AppCompatActivity {
                                 return true;
 
                             case R.id.menuitem_bottombar_search:
-                                Intent intent3 = new Intent(bottombar.this,HomeActivity.class);
+                                Intent intent3 = new Intent(bottombar.this,WebActivity.class);
                                 startActivity(intent3);
                                 return true;
 

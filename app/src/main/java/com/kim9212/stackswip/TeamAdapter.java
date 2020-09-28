@@ -86,6 +86,9 @@ public class TeamAdapter extends RecyclerView.Adapter {
             });
         }
 
+
+
+
     }
 }//Adater
 

@@ -24,13 +24,15 @@
         <activity android:name=".QuestionActivity" />
         <activity android:name=".QuestionUpActivity" />
         <activity android:name=".WebActivity"></activity>
-        <activity android:name=".HomeActivity" />
-        <activity android:name=".IntroActivity" >
+        <activity android:name=".HomeActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".IntroActivity" >
+
         </activity>
         <activity android:name=".MainActivity2" />
         <activity android:name=".RegisterActivity" />

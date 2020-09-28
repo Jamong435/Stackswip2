@@ -5,18 +5,39 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".TeamUpActivity">
+    tools:context=".TeamUpActivity"
+    android:background="#223857">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/up_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#FBAB36">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="팀플"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:contentInsetStart="0dp" />
+    </androidx.appcompat.widget.Toolbar>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="제목"/>
+        android:text="제목"
+        android:textColor="#FFFFFF"/>
     <EditText
         android:id="@+id/TUP_title"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:inputType="text"
-        android:maxLines="2"/>
+        android:maxLines="2"
+        android:backgroundTint="#FBAB36"/>
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -25,7 +46,8 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="분야"/>
+            android:text="분야"
+            android:textColor="#FFFFFF"/>
         <Spinner
             android:id="@+id/TUP_areaSpinner"
             android:layout_width="wrap_content"
@@ -36,51 +58,85 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="내용"/>
+        android:text="내용"
+        android:textColor="#FFFFFF"/>
     <EditText
         android:id="@+id/TUP_msg"
         android:layout_width="match_parent"
-        android:layout_height="240dp"
+        android:layout_height="150dp"
         android:inputType="textMultiLine"
         android:maxHeight="240dp"
-        android:gravity="top"/>
+        android:gravity="top"
+        android:backgroundTint="#FBAB36"
+        android:textSize="25dp"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="연락망"/>
+        android:text="연락망"
+        android:textColor="#FFFFFF"/>
     <EditText
         android:id="@+id/TUP_call"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="text"/>
+        android:layout_height="40dp"
+        android:inputType="text"
+        android:backgroundTint="#FBAB36"
+        android:textSize="15dp"/>
 
     <TextView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="예상인원"/>
+        android:layout_height="35dp"
+        android:text="예상인원"
+        android:textColor="#FFFFFF"/>
     <EditText
         android:id="@+id/TUP_member"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="number"/>
+        android:layout_height="40dp"
+        android:inputType="number"
+        android:backgroundTint="#FBAB36"
+        android:textSize="15dp"
+        />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="예상기간"/>
+        android:text="예상기간"
+        android:textColor="#FFFFFF"/>
     <EditText
         android:id="@+id/TUP_period"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="text"/>
+        android:layout_height="40dp"
+        android:inputType="text"
+        android:backgroundTint="#FBAB36"
+        android:textSize="15dp"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="right"
         android:onClick="clickComplete"
-        android:text="등록"/>
+        android:text="등록"
+        android:textSize="20dp"
+        android:background="#FBAB36"
+        android:layout_margin="10dp"/>
+
+    <FrameLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_weight="1"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView_main_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FBAB36"
+        app:itemIconTint="#FFFFFF"
+        app:itemTextColor="#223857"
+        app:menu="@menu/bottombar_menu"
+        android:layout_gravity="bottom"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="0dp"/>
 
 
 

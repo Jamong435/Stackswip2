@@ -74,6 +74,7 @@ public class QuestionActivity extends AppCompatActivity {
             }
         });
 
+
         // 버튼 클릭시 사용되는 리스너를 구현합니다.
         BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottomNavigationView_main_menu);
         bottomNavigationView.setOnNavigationItemSelectedListener(
@@ -94,12 +95,12 @@ public class QuestionActivity extends AppCompatActivity {
                                 return true;
 
                             case R.id.menuitem_bottombar_search:
-                                Intent intent3 = new Intent(QuestionActivity.this,HomeActivity.class);
+                                Intent intent3 = new Intent(QuestionActivity.this,WebActivity.class);
                                 startActivity(intent3);
                                 return true;
 
                             case R.id.menuitem_bottombar_ses:
-                                Intent intent4 = new Intent(QuestionActivity.this,HomeActivity.class);
+                                Intent intent4 = new Intent(QuestionActivity.this,TeamActivity.class);
                                 startActivity(intent4);
                                 return true;
                         }

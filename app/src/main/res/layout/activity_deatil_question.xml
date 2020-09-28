@@ -5,17 +5,42 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".DeatilQuestionActivity">
+    tools:context=".DeatilQuestionActivity"
+    android:background="#223857">
     <TextView
         android:id="@+id/QD_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="1"/>
+        android:text="1"
+        android:textSize="25dp"
+        android:layout_margin="25dp"
+        android:textColor="#FFFFFF"/>
     <TextView
         android:id="@+id/QD_question"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="1"/>
+        android:text="1"
+        android:textSize="18dp"
+        android:layout_margin="25dp"
+        android:textColor="#FFFFFF"/>
+
+    <FrameLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="677dp"
+        android:layout_weight="1"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView_main_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FBAB36"
+        app:itemIconTint="#FFFFFF"
+        app:itemTextColor="#223857"
+        app:menu="@menu/bottombar_menu"
+        android:layout_gravity="bottom"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="0dp"/>
 
 
 

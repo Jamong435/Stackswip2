@@ -48,6 +48,8 @@ public class QuestionUpActivity extends AppCompatActivity {
         etTitle=findViewById(R.id.QU_title);
         etQuestion=findViewById(R.id.QU_question);
 
+
+
         String[] permissions=new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE};
         if (Build.VERSION.SDK_INT>=Build.VERSION_CODES.M){
             if (checkSelfPermission(permissions[0])== PackageManager.PERMISSION_DENIED){

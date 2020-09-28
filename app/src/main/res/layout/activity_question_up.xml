@@ -5,13 +5,33 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".QuestionUpActivity">
+    tools:context=".QuestionUpActivity"
+    android:background="#223857">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/up_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#FBAB36">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Q &amp; A"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:contentInsetStart="0dp" />
+    </androidx.appcompat.widget.Toolbar>
 
     <TextView
         android:layout_marginTop="50dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="질문"/>
+        android:text="질문"
+        android:textColor="#FFFFFF"/>
 
     <EditText
         android:id="@+id/QU_title"
@@ -19,12 +39,15 @@
         android:layout_height="wrap_content"
         android:inputType="text"
         android:maxEms="50"
-        android:lines="1"/>
+        android:lines="1"
+        android:backgroundTint="#FBAB36"
+        android:textSize="25dp"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="내용"/>
+        android:text="내용"
+        android:textColor="#FFFFFF"/>
 
     <EditText
         android:id="@+id/QU_question"
@@ -33,13 +56,19 @@
         android:inputType="textMultiLine"
         android:gravity="top"
         android:lines="5"
-        android:maxLines="5"/>
+        android:maxLines="5"
+        android:backgroundTint="#FBAB36"
+        android:textSize="25dp"/>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="첨부파일"
         android:layout_gravity="right"
-        android:onClick="loadImg"/>
+        android:onClick="loadImg"
+        android:background="#FBAB36"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp"
+        android:textStyle="bold"/>
 
     <ImageView
         android:id="@+id/QU_img"
@@ -51,7 +80,29 @@
         android:layout_height="wrap_content"
         android:layout_gravity="right"
         android:onClick="clickComplete"
-        android:text="등록"/>
+        android:text="등록"
+        android:background="#FBAB36"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp"
+        android:textStyle="bold"/>
+
+    <FrameLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="677dp"
+        android:layout_weight="1"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView_main_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FBAB36"
+        app:itemIconTint="#FFFFFF"
+        app:itemTextColor="#223857"
+        app:menu="@menu/bottombar_menu"
+        android:layout_gravity="bottom"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="0dp"/>
 
 
 </LinearLayout>

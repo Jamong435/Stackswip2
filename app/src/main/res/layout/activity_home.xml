@@ -5,7 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".HomeActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="#223857">
+
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/up_toolbar"
@@ -24,6 +26,16 @@
             android:textStyle="bold"
             app:contentInsetStart="0dp" />
     </androidx.appcompat.widget.Toolbar>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/que_float"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_baseline_person_24"
+        android:backgroundTint="#F48024"/>
+
 
     <FrameLayout
         android:id="@+id/main_layout"
