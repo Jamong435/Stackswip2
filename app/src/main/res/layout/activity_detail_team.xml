@@ -1,98 +1,101 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".DetailTeamActivity"
     android:background="#223857"
-    >
+    tools:context=".DetailTeamActivity">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/up_toolbar"
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="#FBAB36">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/toolbar_title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="팀플"
-            android:textColor="#FFFFFF"
-            android:textSize="30sp"
-            android:textStyle="bold"
-            app:contentInsetStart="0dp" />
-    </androidx.appcompat.widget.Toolbar>
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/up_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#FBAB36">
 
-    <TextView
-        android:id="@+id/TD_title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="1"
-        android:textSize="30dp"
-        android:textColor="#FBAB36"
-        android:padding="15dp"/>
-    <TextView
-        android:id="@+id/TD_area"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="1"
-        android:textSize="25dp"
-        android:textColor="#FFFFFF"
-        android:padding="10dp"/>
-    <TextView
-        android:id="@+id/TD_msg"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="1"
-        android:textSize="25dp"
-        android:textColor="#FFFFFF"
-        android:padding="10dp"/>
-    <TextView
-        android:id="@+id/TD_email"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="1"
-        android:textSize="25dp"
-        android:textColor="#FFFFFF"
-        android:padding="10dp"/>
-    <TextView
-        android:id="@+id/TD_member"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="1"
-        android:textSize="25dp"
-        android:textColor="#FFFFFF"
-        android:padding="10dp"/>
-    <TextView
-        android:id="@+id/TD_period"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="1"
-        android:textSize="25dp"
-        android:textColor="#FFFFFF"
-        android:padding="10dp"/>
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="팀플"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:contentInsetStart="0dp"/>
+        </androidx.appcompat.widget.Toolbar>
 
 
-    <FrameLayout
-        android:id="@+id/main_layout"
-        android:layout_width="match_parent"
-        android:layout_height="677dp"
-        android:layout_weight="1"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp"
+            android:orientation="vertical">
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottomNavigationView_main_menu"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#FBAB36"
-        app:itemIconTint="#FFFFFF"
-        app:itemTextColor="#223857"
-        app:menu="@menu/bottombar_menu"
-        android:layout_gravity="bottom"
-        android:layout_marginEnd="0dp"
-        android:layout_marginStart="0dp"/>
+            <TextView
+                android:id="@+id/TD_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#F48024"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"
+                android:padding="10dp"
+                android:text="1"/>
 
-</LinearLayout>
+            <TextView
+                android:id="@+id/TD_area"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:layout_marginBottom="8dp"
+                android:padding="10dp"
+                android:text="1"/>
+            <TextView
+                android:id="@+id/TD_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:layout_marginBottom="8dp"
+                android:padding="10dp"
+                android:text="1"/>
+            <TextView
+                android:id="@+id/TD_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:padding="10dp"
+                android:layout_marginBottom="8dp"
+                android:text="1"/>
+            <TextView
+                android:id="@+id/TD_member"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:padding="10dp"
+                android:layout_marginBottom="8dp"
+                android:text="1"/>
+            <TextView
+                android:id="@+id/TD_period"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:padding="10dp"
+                android:text="1"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>

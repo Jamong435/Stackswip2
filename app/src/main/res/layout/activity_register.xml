@@ -5,49 +5,41 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".RegisterActivity"
-    android:background="@drawable/back6">
-
-    <ImageView
-        android:id="@+id/imageview"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_centerHorizontal="true"
-        android:onClick="clickiv"
-        android:layout_marginTop="150dp"
-        android:background="@drawable/imagebox"/>
+    android:background="@drawable/back5">
 
     <EditText
         android:id="@+id/et_id"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
         android:ems="10"
+        android:layout_marginTop="200dp"
         android:gravity="left"
-        android:hint="아이디"
-        android:textColor="#FFFFFFFF"
-        android:textColorHint="#191511"
+        android:hint="ID"
+        android:padding="8dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#C5C5C5"
         android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:background="@drawable/edit_bg"/>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/layout_et"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="230dp"
-        android:layout_height="wrap_content"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
         android:layout_below="@id/et_id"
-        android:layout_centerInParent="true"
-
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/edit_bg"
         android:gravity="center"
         android:hint="비밀번호"
-        android:textColor="#FFFFFFFF"
-        android:textColorHint="#191511"
-        >
+        android:textColor="#FFFFFF"
+        android:textColorHint="#C5C5C5"        >
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/et_pass"
             android:layout_width="match_parent"
+            android:textSize="20sp"
             android:layout_height="wrap_content"
             android:inputType="textPassword" />
 
@@ -57,33 +49,35 @@
 
     <EditText
         android:id="@+id/et_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
         android:layout_below="@id/layout_et"
-        android:layout_centerInParent="true"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
         android:ems="10"
         android:gravity="left"
-        android:textColorHint="#191511"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/edit_bg"
+        android:textColorHint="#C5C5C5"
         android:hint="이름"
+        android:padding="8dp"
         android:inputType="textPersonName" />
 
     <EditText
         android:id="@+id/et_age"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
         android:layout_below="@id/et_name"
-        android:layout_centerInParent="true"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
         android:ems="10"
         android:gravity="left"
-        android:textColor="#FFFFFFFF"
-        android:textColorHint="#191511"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#C5C5C5"
+        android:padding="8dp"
         android:hint="나이"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="@+id/et_name"
-        app:layout_constraintStart_toStartOf="@+id/et_name"
-        app:layout_constraintTop_toBottomOf="@+id/et_name" />
+        android:background="@drawable/edit_bg"
+        android:inputType="textPersonName" />
 
     <Button
         android:layout_alignParentBottom="true"

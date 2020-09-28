@@ -54,7 +54,6 @@ public class RegisterActivity extends AppCompatActivity {
         et_pass = findViewById(R.id.et_pass);
         et_name = findViewById(R.id.et_name);
         et_age = findViewById(R.id.et_age);
-        imageView = findViewById(R.id.imageview);
 
 
         et_pass.addTextChangedListener(new TextWatcher() {
@@ -122,39 +121,4 @@ public class RegisterActivity extends AppCompatActivity {
 
     }
 
-    public void clickiv(View view) {
-        Intent intent = new Intent(Intent.ACTION_PICK);
-        intent.setType("image/*");
-        startActivityForResult(intent, 100);
-    }
-
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-
-        if (requestCode == 100 && resultCode == RESULT_OK) {
-            Uri uri = data.getData();
-            if (uri != null) {
-                Glide.with(this).load(uri).into(imageView);
-
-
-                //저장
-                G.imgUrl = imgad;
-                getSharedPreferences("name", MODE_PRIVATE).edit().putString("picture", G.imgUrl).commit();
-
-                imgad = getRealPathFromUri(uri);
-            }
-        }
-    }
-
-    String getRealPathFromUri(Uri uri){
-        String[] proj= {MediaStore.Images.Media.DATA};
-        CursorLoader loader= new CursorLoader(this, uri, proj, null, null, null);
-        Cursor cursor= loader.loadInBackground();
-        int column_index= cursor.getColumnIndexOrThrow(MediaStore.Images.Media.DATA);
-        cursor.moveToFirst();
-        String result= cursor.getString(column_index);
-        cursor.close();
-        return  result;
-    }
 }

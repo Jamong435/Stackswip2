@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class DetailTeamActivity extends AppCompatActivity {
 
+    //    보여지는 XML 문서
     TextView DTtitle;
     TextView DTarea;
     TextView DTmsg;
